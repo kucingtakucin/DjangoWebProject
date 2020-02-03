@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block ContentHeader %}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Peminjaman Studio</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="{% url "index" %}">Home</a></li>
+                    <li class="breadcrumb-item active">Peminjaman Studio</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+{% endblock %}
+
+{% block MainContent %}
+<section class="content">
+
+<!-- Default box -->
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Data Peminjaman Studio</h3>
+        <div class="card-tools">
+            <button type="button" class="btn btn-tool">
+                <a href="{% url "PeminjamanStudio:tambahdata" %}" class="btn btn-warning btn-sm">
+                    <i class="fas fa-user-plus"></i>
+                    Add
+                </a>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <table class="table table-striped projects">
+            <thead>
+                <tr>
+                    <th style="width: 1%" class="text-center">
+                        No
+                    </th>
+                    <th style="width: 15%" class="text-center">
+                        Nama
+                    </th>
+                    <th style="width: 1%" class="text-center">
+                        NIM
+                    </th>
+                    <th style="width: 1%" class="text-center">
+                        Jurusan
+                    </th>
+                    <th style="width: 1%" class="text-center">
+                        Angkatan
+                    </th>
+                    <th style="width: 15%" class="text-center">
+                        Hari, Tanggal
+                    </th>
+                    <th style="width: 12%" class="text-center">
+                        Waktu
+                    </th>
+                    <th style="width: 20%">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        1.
+                    </td>
+                    <td class="text-center">
+                        <a>
+                            Adam Arthur Faizal
+                        </a>
+                        <br>
+                        <small>
+                          Created 01.01.2019
+                        </small>
+                    </td >
+                    <td class="text-center">
+                        <a>
+                            M3119001
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a>
+                            D3 Teknik Informatika
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a>
+                            2019
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a>
+                            Senin, 1 Februari 2020
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a>
+                            12.00 - 23.00
+                        </a>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder"></i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt"></i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+</section>
+{% endblock %}

@@ -72,42 +72,43 @@
                 </tr>
             </thead>
             <tbody>
+                {% for elemen in data_model %}
                 <tr>
                     <td class="text-center">
-                        1.
+                        {{ forloop.counter }}
                     </td>
                     <td class="text-center">
                         <a>
-                            Adam Arthur Faizal
+                            {{ elemen.nama}}
                         </a>
                         <br>
                         <small>
-                          Created 01.01.2019
+                            {{ elemen.created }}
                         </small>
                     </td >
                     <td class="text-center">
                         <a>
-                            M3119001
+                            {{ elemen.nim }}
                         </a>
                     </td>
                     <td class="text-center">
                         <a>
-                            D3 Teknik Informatika
+                            {{ elemen.program_studi }}
                         </a>
                     </td>
                     <td class="text-center">
                         <a>
-                            2019
+                            {{ elemen.angkatan }}
                         </a>
                     </td>
                     <td class="text-center">
                         <a>
-                            Senin, 1 Februari 2020
+                            {{ elemen.hari }}, {{ elemen.tanggal }}
                         </a>
                     </td>
                     <td class="text-center">
                         <a>
-                            12.00 - 23.00
+                            {{ elemen.waktu }}
                         </a>
                     </td>
                     <td class="project-actions text-right">
@@ -126,6 +127,7 @@
                         </a>
                     </td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>

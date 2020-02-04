@@ -29,7 +29,7 @@ def suratbebaslabkomtambah(request):
         'data_form': data_form
     }
     print(request.POST)
-    return render(request, 'SuratBebasLabkomTambah/SuratBebasLabkomTambah.html', context)
+    return render(request, 'SuratBebasLabkomCRUD/SuratBebasLabkomCRUD.html', context)
     pass
 
 
@@ -64,5 +64,5 @@ def suratbebaslabkomubah(request, update_id):
         'data_form': data_form
     }
     print(request.POST)
-    return render(request, 'SuratBebasLabkomTambah/SuratBebasLabkomTambah.html', context)
+    return render(request, 'SuratBebasLabkomCRUD/SuratBebasLabkomCRUD.html', context)
     pass

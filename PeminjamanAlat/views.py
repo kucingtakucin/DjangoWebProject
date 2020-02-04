@@ -29,7 +29,7 @@ def peminjamanalattambah(request):
         'data_form': data_form
     }
     print(request.POST)
-    return render(request, 'PeminjamanAlatTambah/PeminjamanAlatTambah.html', context)
+    return render(request, 'PeminjamanAlatCRUD/PeminjamanAlatCRUD.html', context)
     pass
 
 
@@ -71,5 +71,5 @@ def peminjamanalatubah(request, update_id):
         'data_form': data_form
     }
     print(request.POST)
-    return render(request, 'PeminjamanAlatTambah/PeminjamanAlatTambah.html', context)
+    return render(request, 'PeminjamanAlatCRUD/PeminjamanAlatCRUD.html', context)
     pass

@@ -21,7 +21,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
-    path('PeminjamanLab/', include('PeminjamanLab.urls')),
+    path('PeminjamanLab/', include('PeminjamanLab.urls', namespace="PeminjamanLab")),
     path('PeminjamanAlat/', include('PeminjamanAlat.urls', namespace="PeminjamanAlat")),
     path('PeminjamanStudio/', include('PeminjamanStudio.urls', namespace="PeminjamanStudio")),
     path('SuratBebasLabkom/', include('SuratBebasLabkom.urls', namespace="SuratBebasLabkom")),

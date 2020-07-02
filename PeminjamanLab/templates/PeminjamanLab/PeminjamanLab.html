@@ -22,24 +22,24 @@
 
 {% block MainContent %}
     {% block Row1 %}
-        <div class="container">
-            <div class="card">
-        <div class="card-header">
-            <h5 class="m-0">Peminjaman Lab di Dalam Jam Kuliah</h5>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="m-0">Peminjaman Lab di Dalam Jam Kuliah</h5>
+            </div>
+            <div class="card-body">
+                <a href="{% url "PeminjamanLab:didalam" %}" class="btn btn-primary">Lihat selengkapnya</a>
+            </div>
         </div>
-        <div class="card-body">
-            <a href="{% url "PeminjamanLab:didalam" %}" class="btn btn-primary">Lihat selengkapnya</a>
-        </div>
-    </div>
 
-    <div class="card card-primary card-outline">
-        <div class="card-header">
-            <h5 class="m-0">Peminjaman Lab di Dalam Jam Kuliah</h5>
-        </div>
-        <div class="card-body">
-            <a href="{% url "PeminjamanLab:diluar" %}" class="btn btn-primary">Lihat selengkapnya</a>
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h5 class="m-0">Peminjaman Lab di Dalam Jam Kuliah</h5>
+            </div>
+            <div class="card-body">
+                <a href="{% url "PeminjamanLab:diluar" %}" class="btn btn-primary">Lihat selengkapnya</a>
+            </div>
         </div>
     </div>
-        </div>
     {% endblock %}
 {% endblock %}
